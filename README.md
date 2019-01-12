@@ -52,6 +52,6 @@ To run the manager interface please follow the steps below:
 
 ### Bamazon Demo
 
-You can download and watch the demo of the Bamazon customer and manager interfaces at the link below. Make sure to download the video, as opposed to watching it in your Browser, which will display a compressed version making the CLI output illegible.
+You can watch the demo of the Bamazon customer and manager interfaces at the link below.
 
 [Bamazon Demo](https://drive.google.com/open?id=1CZ-leV1gSUBrLjpaSrOOcklg-irJ_CMS)
