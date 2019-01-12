@@ -13,7 +13,7 @@ In order to run this application, you should have the MySQL database already set
 
 The Customer Interface allows the user to view the current inventory of store items and purchase any of the items listed. 
 
-The inventory lists all the data from the *products* tables, which consists of  item ID, product name, department in which the item is located and price. The user can then purchase an item by entering the item ID and the desired quantity. If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price and updating the store database. If the desired quantity is not available, the user is prompted to modify their order. Once the order is completed, the user can place another order or exit the system. 
+The inventory lists all the data from the *products* table, which consists of  item ID, product name, department in which the item is located and price. The user can then purchase an item by entering the item ID and the desired quantity. If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price and updating the store database. If the desired quantity is not available, the user is prompted to modify their order. Once the order is completed, the user can place another order or exit the system. 
 
 To run the customer interface please follow the steps below:
 
@@ -22,9 +22,9 @@ To run the customer interface please follow the steps below:
 	npm install
 	node bamazonCustomer.js
 
-### Manager Interace
+### Manager Interface
 
-The manager interface presents a list of four options, as below. 
+The manager interface presents a list of five options: 
 
 	? Please select an option: (Use arrow keys)
 	❯ View Products for Sale 
@@ -41,6 +41,8 @@ The **Add to Inventory** option allows the user to select a given item ID and ad
 
 The **Add New Product** option allows the user to enter details about a new product which will be added to the database upon completion of the form.
 
+The **Exit BIMS** option allows the user to exit the Bamazon Inventory Management System (BIMS).
+
 To run the manager interface please follow the steps below:
 
 	git clone https://github.com/sarabuckley/Bamazon.git
@@ -52,4 +54,4 @@ To run the manager interface please follow the steps below:
 
 You can download and watch the demo of the Bamazon customer and manager interfaces at the link below. Make sure to download the video, as opposed to watching it in your Browser, which will display a compressed version making the CLI output illegible.
 
-[Bamazon Demo](https://drive.google.com/open?id= )
+[Bamazon Demo](https://drive.google.com/open?id=1CZ-leV1gSUBrLjpaSrOOcklg-irJ_CMS)
