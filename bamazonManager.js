@@ -212,13 +212,8 @@ function addNewProduct() {
         name: "price",
         type: "input",
         message: "Enter price per unit: ",
-        validate: function(value) {
-          if (isNaN(parseInt(value))) {
-            return false;
-          }
-         return true;
-        }
-      },
+        validate: validatePrice
+      },    
       {
         name: "quantity",
         type: "input",
@@ -275,8 +270,18 @@ function validateInput(value) {
   var sign = Math.sign(value);
 
   if (integer && (sign === 1)) {
-    return true;
+      return true;
   } else {
-    return 'Please enter a whole non-zero number.';
+      return "Please enter a whole non-zero number.";
+  }
+}
+
+// validatePrice makes sure that the user is supplying a non-zero numerical value
+function validatePrice(value) {
+
+  if (isNaN(parseInt(value)) || Math.sign(value) === 0) {
+      return "Please enter a valid non-zero number.";
+  } else {
+      return true;
   }
 }
